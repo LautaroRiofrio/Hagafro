@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hagafro | HOME</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body id="body">
+	<header>
+		<img src="img/logo.svg" id="logo" >
+		<div id="memu">
+			<ul id="ulMovil">
+				<a href="#"><li id="liM0" class="li">HOME</li></a>
+				<li id="liM1" class="li" onclick="catalogo()">CATÁLOGO</li>
+				<li id="liM3" class="li" onclick="contacto()">CONTACTO</li>
+			</ul>
+			<img src="img/bars-solid.svg" class="menu" onclick="menu()">
+		</div>
+
+		<nav id="nav">
+			<ul id="ul">
+				<a href="#"><li id="li0">HOME</li></a>
+				<li id="li1" onclick="catalogo()">CATÁLOGO</li>
+				<li id="li3" onclick="contacto();">CONTACTO</li>
+				
+			</ul>
+		</nav>
+	</header>
+	<div class="separacion"></div>
+	<img src="img/fondoVerduras.jpg" class="fondo">
+	<div class="home" id="home">
+		<h1>HOME</h1>
+	</div>
+	<div id="contenedor">
+		<div class="presentacion">
+			<p>
+				Producimos semillas para huerta, se ensobran en pequeñas cantidades para huerta familiar, producidas en forma orgánica. En el icono “CATÁLOGO” tenes la lista completa de semillas disponibles con precios actualizados. Donde podes hacer tu compra online y te las enviamos a todo el pais.
+			</p>
+			<p>
+			Por cualquier duda por favor contactarse con nosotros vía email a: <span> mailDeEjemplo@gmail.com</span>
+			</p>
+		</div>
+		<img src="img/queSembrar.jpg" class="cuadro"><br>
+	</div>
+	<footer>
+		<img src="img/facebook.jpg">
+		<img src="img/twiter.jpg">
+
+	</footer>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">
+		function catalogo(){
+			window.location.href = "ventanas/catalogo/index.html";
+		}
+		function contacto(){
+			window.location.href = "ventanas/contacto/index.html"
+		}
+	</script>
+</body>
+</html>
